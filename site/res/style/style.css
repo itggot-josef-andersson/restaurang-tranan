@@ -1,0 +1,52 @@
+/* Import the fonts we'll use. */
+@import url("http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800");
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:700");
+
+body { margin: 0; padding: 0; font-size: 17px; font-family: 'Roboto', Arial; background: #988550; color: #36301A; }
+
+/* The header container. */
+div.site_header { background: #ffffff url('../img/headerback.jpg') no-repeat fixed top center; background-size: cover; text-align: center; }
+
+/* The site logo inside the header container. */
+img.site_logo { margin: 20px 0; }
+
+/* Menu bar design */
+#navbar    { background: #B9A064; width: auto;                 }
+#navbar ul { list-style: none; line-height: 1; display: block; }
+
+/* Make the menu bar to display inline instead displaying each item on individual lines. */
+#navbar ul:after { content: " "; font-size: 0; height: 0; visibility: hidden; }
+#navbar ul li    { display: inline-block; }
+
+#navbar.align-right ul li { float: right;       }
+#navbar.align-center ul   { text-align: center; }
+
+#navbar ul li a { color: #ffffff; text-decoration: none; display: block; padding: 15px 25px; transition: color .25s;
+    font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 14px; position: relative; }
+
+/* The change that is done when mouse hover over a menu item. */
+#navbar ul li a:hover        { color: #333333; }
+#navbar ul li a:hover:before { width: 100%;    }
+
+/* The dots between each menu item. */
+#navbar ul li a:after, #navbar ul li a:before { content: ""; display: block; position: absolute; transition: width .25s; }
+#navbar ul li a:after  { right: -3px; top: 19px; height: 6px; width: 6px; background: #ffffff; opacity: .5; }
+#navbar ul li a:before { left: 0; bottom: 0; height: 3px; width: 0; background: #333333;                    }
+/* Disable the dot after the last menu item. */
+#navbar ul li.last > a:after, #navbar ul li:last-child > a:after { display: none; }
+
+/* The current page. */
+#navbar ul li.active a { color: #333333; }
+#navbar ul li.active a:before { width: 100%; }
+
+#navbar.align-right li.last > a:after, #navbar.align-right li:last-child > a:after { display: block; }
+#navbar.align-right li:first-child a:after { display: none; }
+
+/* TODO: The mobile version of the menu needs some work. */
+/*@media screen and (max-width: 768px) {
+  #navbar ul li   { float: none; display: block;                                           }
+  #navbar ul li a { width: 100%; box-sizing: border-box; border-bottom: 1px solid #fb998c; }
+  #navbar ul li.last > a, #navbar ul li:last-child > a { border: 0; }
+  #navbar ul li a:after, #navbar ul li a:before  { display: none; }
+}*/
