@@ -39,20 +39,21 @@ div.container {
     width: 90%;
 }
 
-div.divider {
-    max-width: 700px;
-    width: calc(90% - 100px);
-    border-bottom: 1px solid #a84545;
-    margin: auto;
+div.food_item {
+    height: 150px;
+    padding: 5px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 10px;
-    padding: 4px;
-    color: #723f3f;
-    font-size: 11px;
+img.food_image {
+    float:left;
+    margin-right: 12px;
 }
+
+/* Dividers are used instead of hr's */
+div.divider { max-width: 700px; width: calc(90% - 100px); border-bottom: 1px solid #a84545; margin: 10px auto; }
+
+/* The footer at the bottom of the page (copyright) */
+footer { text-align: center; margin-top: 10px; padding: 4px; color: #723f3f; font-size: 11px; }
 
 /* Menu bar design */
 #navbar    { background: #B74D4D; width: auto;                 }
