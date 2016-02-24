@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Restaurang Tranan</title>
     <link rel="stylesheet" href="./res/style/style.css">
 </head>
@@ -24,8 +25,24 @@
         </div>
     </div>
     <div class="container">
-        <h3>Boka</h3>
-
+        <h3>Boka via telefon</h3>
+        <h5>Ring 00 72 40</h5>
+        <h3>Boka via webben</h3>
+        <form action="#">
+            <table>
+                <tr>
+                    <td><label for="antal_platser">Antal platser:</label></td>
+                    <td><input type="number" value="2" id="antal_platser"></td>
+                </tr>
+                <tr>
+                    <td><label for="date_and_time">Datum och tid:</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Boka"></td>
+                </tr>
+            </table>
+        </form>
     </div>
     <footer>
         <nav>
